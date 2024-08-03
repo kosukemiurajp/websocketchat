@@ -23,6 +23,7 @@ cd websocketchat
 プロジェクトのルートディレクトリで、以下のコマンドを実行して依存関係をインストールします。
 
 ```
+cd nodejs
 npm install
 ```
 
