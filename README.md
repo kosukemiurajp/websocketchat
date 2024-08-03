@@ -15,7 +15,7 @@
 
 ```
 git clone https://github.com/kosukemiurajp/websocketchat.git
-cd your-repository
+cd websocketchat
 ```
 
 ### 依存関係のインストール
