@@ -14,7 +14,7 @@
 まず、リポジトリをクローンします。
 
 ```
-git clone https://github.com/yourusername/your-repository.git
+git clone https://github.com/kosukemiurajp/websocketchat.git
 cd your-repository
 ```
 
