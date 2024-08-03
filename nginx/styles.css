@@ -1,0 +1,121 @@
+/* 全体の背景色 */
+body {
+    background-color: #111; /* ダーク背景 */
+    color: #fff; /* テキスト色は白 */
+    font-family: 'Arial', sans-serif;
+}
+
+/* メッセージ表示領域 */
+#messages {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: rgba(255, 255, 255, 0.1); /* 半透明な背景 */
+    word-wrap: break-word; /* テキストを折り返す */
+}
+
+/* メッセージのスタイル */
+.message {
+    padding: 10px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2); /* 半透明な背景 */
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* ネオングリーンのグロー */
+    display: flex;
+    align-items: center; /* 垂直方向に中央揃え */
+    white-space: pre-wrap; /* 改行とスペースを維持する */
+}
+
+/* 自分が送信したメッセージのスタイル */
+.my-message {
+    background: rgba(255, 20, 147, 0.3); /* ネオンピンクの背景 */
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.7); /* ネオンピンクのグロー */
+}
+
+/* 他のユーザーが送信したメッセージのスタイル */
+.other-message {
+    background: rgba(255, 255, 255, 0.2); /* 半透明な背景 */
+}
+
+/* ユーザー名 */
+.username {
+    font-weight: bold;
+    color: #39ff14; /* ネオングリーン */
+    margin-right: 10px; /* username と text の間に余白を追加 */
+}
+
+/* メッセージテキスト */
+.text {
+    color: #fff; /* テキスト色 */
+    display: inline-block;
+}
+
+/* 入力エリア */
+#input-area {
+    display: flex;
+    flex-direction: column;
+}
+
+/* インプットフィールド */
+input[type="text"] {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.7); /* ネオングリーンのグロー */
+}
+
+/* ボタン */
+button {
+    background-color: #FF4081; /* ネオンピンク */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* ボタンの角を丸くする */
+}
+
+button:hover {
+    background-color: #D500F9; /* ホバー時の色 */
+}
+
+/* コンテナ */
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+/* スクロールバー全体 */
+#messages::-webkit-scrollbar {
+    width: 12px; /* スクロールバーの幅 */
+}
+
+/* スクロールバーのトラック */
+#messages::-webkit-scrollbar-track {
+    background: #f1f1f1; /* スクロールバーの背景 */
+}
+
+/* スクロールバーのサム（つかむ部分） */
+#messages::-webkit-scrollbar-thumb {
+    background: #888; /* サムの色 */
+    border-radius: 10px; /* サムの角を丸くする */
+}
+
+/* サムのホバー時のスタイル */
+#messages::-webkit-scrollbar-thumb:hover {
+    background: #555; /* サムのホバー時の色 */
+}

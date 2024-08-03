@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - "8081:80"
+    depends_on:
+      - websocket
+
+  websocket:
+    build:
+      context: ./nodejs
+    ports:
+      - "8080:8080"

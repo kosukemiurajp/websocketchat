@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Chat</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- カスタムスタイル -->
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="client.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WebSocket Chat</h1>
+        <div id="messages" class="card-panel"></div>
+        <div id="input-area" class="input-field">
+            <input type="text" id="username" placeholder="Enter your username" class="validate">
+            <input type="text" id="messageInput" placeholder="Enter message" class="validate">
+            <button class="waves-effect waves-light" onclick="sendMessage()">Send Message</button>
+        </div>
+    </div>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
